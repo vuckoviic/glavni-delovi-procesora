@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Glavni Delovi Procesora</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <a href="#osnovno">Osnovno</a>
+        <a href="#jedinice">Jedinice</a>
+        <a href="#registri">Registri</a>
+    </header>
+    <div class="main">
+        <div id="osnovno">
+            
+            <div id="staJeProcesor">
+                <div id="staJeProcesor-text">
+                    <h1>Sta je procesor?</h1>
+                    <p>Procesor predstavlja centralnu jedinicu racunara</p>
+                    <p>Osnovne funkcije procesora: </p>
+                    <ol>
+                        <li>- upravlja radom svih delova racunara i u njemu se realizuje obada podataka</li>
+                        <li>- izvrsava instrukcije programa</li>
+                        <li>- organizuje pristup operativnoj memoriji</li>
+                        <li>- inicira rad perifernih uredjaja</li>
+                        <li>- obradjuje zahteve koji dolaze od drugih jedinica racunara i iz okruzenja</li>
+                    </ol>
+                    <p>Osnovni delovi procesra: </p>
+                    <ol>
+                        <li>- aritmeticko-logicka jedinica</li>
+                        <li>- upravljacka jedinica</li>
+                        <li>- registri</li>
+                    </ol>
+                </div>
+
+                <img src="images/2.jpg" alt="" id="osnovnoImg">
+            </div>
+            
+            <div id="izvrsavanjePrograma">
+                <h1>Izvrsavanje programa</h1>
+                <p>Svaki masinski progrma se sastoji iz inza masinskih istrukcija, a svaka masinksa instrukcija se sastoji iz masinskih operacija i operanada</p>
+                <p>Izvrsenje programa podrazumeva: </p>
+                <ol>
+                    <li>- prenos(pozivannje) svake instrukcije iz operativne memorije u upravljacku jedinicu</li>
+                    <li>- prenos podataka iz opeartivne memorije ili registra procesora u aritmeticko-logicku jedinicu</li>
+                    <li>- izvrsenje (realizacija) operacije predvinjene instrukcijom</li>
+                    <li>- pamcenje rezultata u operativnoj memoriji ili registrima</li>
+                </ol>
+            </div>
+
+            <div id="blokSemaProcesora">
+                <img src="images/bloksema.jpg" alt="">
+            </div>
+
+        </div>
+
+        <div id="jedinice">
+
+            <div id="upravljackaJedinica">
+                <h1>Upravljacka (komandna) jedinica</h1>
+                <p>Upravljacka jedinica (eng. Control unit) naziva se komandni blok i predstavlja funckionalnu celinu ciji je glavni deo dekoder</p>
+                <p>Osnovne funkcije</p>
+                <ol>
+                    <li>- generise urpavljacke signale</li>
+                    <li>- koordinira svim aktivnostima u procesoru</li>
+                    <li>- pribavlja, dekodira i omogucava izvrsenje instrukcije</li>
+                    <li>- komunicira sa svim ostalim jedinicama procesora i racunara uopste</li>
+                    <li>- salje upravljacke signale drugim elemetnima procesora u iclju izvrsenja instrukcije</li>
+                </ol>
+                <img src="" alt="">
+            </div>
+<img src="images/1.jpg" alt="" id="jediniceImg">
+            <div id="aritmetickoLogJedinica">
+                <h1>Aritmeticko logicka jedinica</h1>
+                <p>ALU (eng. Arithmetic Logic Unit) je visefunkcionalni kombinacioni blok koji izvodi opearcije nad binardnim podacima</p>
+                <p>Osnovne funkcije:</p>
+                <ol>
+                    <li>- obavlja aritmeticke i logicke operacije</li>
+                    <li>- vrsi pripremanje i izvrsavanje instrukcija</li>
+                    <li>- vrsi izracunavanja na osnovu podataka dobijenih iz upravljacke jedinice</li>
+                </ol>
+                <img src="" alt="">
+            </div>
+
+        </div>
+
+        <div id="registri">
+
+            <div id="registriUvod">
+                <h1>Registri</h1>
+                <p>Registri (eng. Registers) su memorije na niovu procesora, nazivaju se i polje registara</p>
+                <p>Vrste registara: </p>
+                <ol>
+                    <li>- registri opste namene</li>
+                    <li>- specijalizovani (upravljacki) registri</li>
+                </ol>
+                <img src="" alt="">
+            </div>
+
+            <div id="upravljackiRegistri">
+                <h1>Upravljacki registri procesora</h1>
+                <p>Svaki procesor poseduje odredjeni broj registara namednjenih priveremenom cuvanju informacija za uprvaljanje. Ovi registri se nazivaju upravljacki registri</p>
+                <p>Vrste upravljackih registara</p>
+                <ol>
+                    <li>- adresni registar memorije (AR)</li>
+                    <li>- prihvatni registar memorije (PR)</li>
+                    <li>- brojac instrukcije (BI)</li>
+                    <li>- registar instrukcija (RI)</li>
+                    <li>- akumulator (AK)</li>
+                    <li>- registar uslova (RSP)</li>
+                    <li>- bazni registri (BRi)</li>
+                    <li>- pokazivac steka</li>
+                </ol>
+            </div>
+
+            <div id="adresniRegistar">
+                <h1>Adresni registar memorije</h1>
+                <p>Pri citanju iz memorije ili pri upisu u memoriju, adresa memorijske lokacije kojoj treba pristupiti upisuje se u poseban registar procesora koji se naziva dresni registar memorije (AR)</p>
+                <p>Na osnovu adrese u adresnom registru posebnim kolima se pronalazi potrebna memorijska lokacija i njoj se pristupa</p>
+            </div>
+
+            <div id="prihvatniRegistar">
+                <h1>Prihvatni registar memorije</h1>
+                <p>Svaki podatak koji treba upisati ili procitati iz memorije mora se prethodno smestiti u poseban registar procesora koji se naziva prihvatni registar memorije (PR)</p>
+                <p>Procesor citanja</p>
+                <ol>
+                    <li>- (AR) := ad</li>
+                    <li>- na osnovu sadrzaja AR, nalazi se potrebna memorijska lokacija</li>
+                    <li>- (PR) := M[ad]</li>
+                </ol>
+                <p>Proces upisa</p>
+                <ol>
+                    <li>- (AR) := ad</li>
+                    <li>- (PR) := (R)</li>
+                    <li>- na osnovu sadrzaja AR nalazi se odgovarajuca lokacija</li>
+                    <li>- M[ad] := (PR)</li>
+                </ol>
+            </div>
+
+            <div id="brojacIRegistarInstrukcija">
+                <h1>Brojac i registar instrukcija</h1>
+                <p>Pre startovanja izvrsenja u programski brojac (BI) se unosi adresa prve instrukcije koja ce se izvrsiti, a posle pozivanja svake instrukcije pgorama sadrzaj brojaca se povecava za 1 tj za duzinu instrukicje</p>
+                <p>Da bi instrukcija mogla upravljati izvrsenjem operacije ona mora biti smestena u u pravljacku jedinicu procesora. Zato je uveden poseban registar koji se naziva registar instrukcija ili registar naredni (RI)</p>
+                <p>Pozivanje tekuce instrukcije iz operativne memorije i njeno smestanje u registar instrukcjia se odvija na sledeci nacin:</p>
+                <ul>
+                    <li>- (AR) := (BI)</li>
+                    <li>- na osnovu sazdraja AR selektuje se lokacija u memoriji u kojoj se nalazi instukcija</li>
+                    <li>- (PR) := M[AR]</li>
+                    <li>- (RI) := {PR}</li>
+                </ul>
+            </div>
+
+            <div id="akumulator">
+                <h1>Akumulator</h1>
+                <p>Sve aritmeticke i logicke operacije, operacije pomeranja i mnoge druge masinske operacije izvrsavaju se posebnim registrom procesora koji se naziva akumulator (AK)</p>
+                <p>Proces izvrsenja masinske operacije:</p>
+                <ol>
+                    <li>- prvi operand se nalazi u AK</li>
+                    <li>- (PR) := M[A1]</li>
+                    <li>- (AK) := (AK) OP (PR)</li>
+                </ol>
+            </div>
+
+            <div id="registarUslova">
+                <h1>Registar uslova</h1>
+                <p>Drugacije se naziva registar stanja procesora (RSP)</p>
+                <p>Sluzi za pamcenje kodova uslova ili kodova stanja koji predstavljaju informacije dobijene pri izvrsenju operacije</p>
+                <p>Najcesce korisceni uslovi su:</p>
+                <ul>
+                    <li>- sadrzaj AK nula (Z bit)</li>
+                    <li>- sadrzaj AK negativan (N bit)</li>
+                    <li>- sadrzaj AK pozitivan (P bit)</li>
+                    <li>- indikator prekoracenja formata (V bit)</li>
+                    <li>- indikator rpenosa (C bit) i drugi...</li>
+                </ul>
+                <p>Koristi se kod instrukcija grananja</p>
+            </div>
+
+        </div>
+
+    </div>
+</body>
+</html>
